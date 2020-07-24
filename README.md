@@ -30,3 +30,7 @@ sudo apt install mysql-client-core-5.7
 docker exec -it art-mysql bash
 ```
 - `mysql -u root -p` - we used MYSQL_ALLOW_EMPTY_PASSWORD, so password is empty
+### `299`-`302` Workbench Installation
+- connected to `192.168.1.41:3306` user `root` password empty
+- `select * from mysql.user;` - shows result but in schemas we can't see database `user`
+- Edit -> Preferances -> SQL Editor -> Show Metadata and Internal Schemas
