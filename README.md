@@ -23,3 +23,10 @@ sudo apt install mysql-client-core-5.7
  - `describe user;` - show table structure
  - `select host, user  from user;`
  - `exit;`
+
+### `298` MySQL Command Line for Docker
+- we can run command from inside the container using
+```
+docker exec -it art-mysql bash
+```
+- `mysql -u root -p` - we used MYSQL_ALLOW_EMPTY_PASSWORD, so password is empty
